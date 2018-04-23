@@ -121,12 +121,14 @@
                 <li><strong>Finish All Possible</strong> will keep executing jobs as long as its
                   dependencies are met.
                 </li>
+                <li><strong>Continue Flow</strong> will keep executing jobs and run new jobs.</li>
               </ul>
               <select id="failure-action" name="failureAction"
                       class="form-control form-control-auto">
                 <option value="finishCurrent">Finish Current Running</option>
                 <option value="cancelImmediately">Cancel All</option>
                 <option value="finishPossible">Finish All Possible</option>
+                <option value="continueFlow">Continue Flow</option>
               </select>
             </div>
 

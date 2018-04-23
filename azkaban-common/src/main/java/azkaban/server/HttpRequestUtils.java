@@ -49,6 +49,8 @@ public class HttpRequestUtils {
         execOptions.setFailureAction(FailureAction.CANCEL_ALL);
       } else if (option.equals("finishPossible")) {
         execOptions.setFailureAction(FailureAction.FINISH_ALL_POSSIBLE);
+      }else if (option.equals("continueFlow")) {
+        execOptions.setFailureAction(FailureAction.CONTINUE_FLOW);
       }
     }
 

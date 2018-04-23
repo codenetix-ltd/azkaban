@@ -113,6 +113,7 @@
                 <option value="finishCurrent">Finish Current Running</option>
                 <option value="cancelImmediately">Cancel All</option>
                 <option value="finishPossible">Finish All Possible</option>
+                <option value="continueFlow">Continue Flow</option>
               </select>
             </dd>
             <dt>Failure Email</dt>

@@ -840,7 +840,9 @@ public class FlowRunner extends EventHandler implements Runnable {
       } else if (depStatus == Status.FAILED || depStatus == Status.CANCELLED
           || depStatus == Status.KILLED) {
         // We propagate failures as KILLED states.
-        shouldKill = true;
+        if(this.failureAction != FailureAction.CONTINUE_FLOW) {
+          shouldKill = true;
+        }
       }
     }
 

@@ -669,6 +669,9 @@ public class ExecutorServlet extends LoginAbstractAzkabanServlet {
       case FINISH_ALL_POSSIBLE:
         failureAction = "finishPossible";
         break;
+      case CONTINUE_FLOW:
+        failureAction = "continueFlow";
+        break;
     }
     ret.put("failureAction", failureAction);
 
